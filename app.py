@@ -18,6 +18,7 @@ from tensorflow.keras.models import model_from_json
 #my_devices = tf.config.experimental.list_physical_devices(device_type='CPU')
 #tf.config.experimental.set_visible_devices(devices= my_devices, device_type='CPU')
 
+
 app= Flask(__name__)
 
 base_path = os.path.dirname(__file__)
