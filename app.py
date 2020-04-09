@@ -11,13 +11,12 @@ from gevent.pywsgi import WSGIServer
 
 os.environ["CUDA_VISIBLE_DEVICES"]="-1"    
 
-import tensorflow as tf
 from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import model_from_json
 
-my_devices = tf.config.experimental.list_physical_devices(device_type='CPU')
-tf.config.experimental.set_visible_devices(devices= my_devices, device_type='CPU')
-
+#my_devices = tf.config.experimental.list_physical_devices(device_type='CPU')
+#tf.config.experimental.set_visible_devices(devices= my_devices, device_type='CPU')
 
 app= Flask(__name__)
 
@@ -29,7 +28,7 @@ MODEL_WEIGHT_PATH = os.path.join(base_path,'model/detectPneumonia98psr.h5')
 with open(MODEL_PATH, 'r') as f:
     json_model_file = f.read()
 
-model = tf.keras.models.model_from_json(json_model_file)
+model = model_from_json(json_model_file)
 model.load_weights(MODEL_WEIGHT_PATH)
 
 model.compile(optimizer = RMSprop(lr = 0.001),
