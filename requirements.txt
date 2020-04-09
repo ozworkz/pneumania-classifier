@@ -7,7 +7,6 @@ chardet==3.0.4
 click==7.1.1
 Flask==1.1.2
 gast==0.2.2
-gencpp==0.6.0
 geneus==2.2.6
 genlisp==0.4.16
 genmsg==0.5.11
