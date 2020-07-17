@@ -3,8 +3,10 @@ This is an image classifier attempt to detect pneumania patients by running CNNs
 Tensorflow and keras are used as deep learning framework. Additionally a Flask server and basic website pages are added to repo in order to show how to host a basic DNN model in case of demo requirement. Please read the important notice below before using it for any purposes.
 
 Two image class sets are used for training: 
-  1. Normal chest X-rays and 
-  2. Chest X-rays of Pneumonia patients (such as Viral Infection, Covid-19), I ran an CNN network on the following datasets without using transfer learning. 
+  1. Normal chest X-rays 
+  2. Chest X-rays of Pneumonia patients (such as Viral Infection, Covid-19) 
+  
+I ran an CNN network on the following datasets without using transfer learning. 
 
 ## Datasets:
   1. https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images/data?
