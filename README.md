@@ -1,6 +1,6 @@
 # Pneumania Classifier:
 This is an image classifier attempt to detect pneumania patients by running CNNs on chest X-rays.
-Tensorflow and keras are used as deep learning framework. Additionally a Flask server and basic website pages are also added to repo in order to show how to demo a basic DNN model. Please read the important notice below before using it for any purposes.
+Tensorflow and keras are used as deep learning framework. Additionally a Flask server and basic website pages are added to repo in order to show how to host a basic DNN model in case of demo requirement. Please read the important notice below before using it for any purposes.
 
 Two image class sets are used for training: 
   1. Normal chest X-rays and 
