@@ -2,7 +2,7 @@
 
 **Please do not use this software as a medical diagnosis tool as it lacks clinical study. Please read the important notice below before using it for any purposes.**
 
-After seeing so many pneumonia image classifier attempts flooding the internet at the end of March 2020, I decided to make an attempt to build my own image classifier trying to detect pneumonia patients by running CNNs on chest X-rays. 
+After seeing so many pneumonia image classifier attempts flooding the internet, I decided to make an attempt to build my own image classifier trying to detect pneumonia patients by running CNNs on chest X-rays. 
 
 ## Datasets:
   1. https://www.kaggle.com/paultimothymooney/detecting-pneumonia-in-x-ray-images/data?
