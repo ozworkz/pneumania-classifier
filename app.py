@@ -9,7 +9,7 @@ from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
 
-os.environ["CUDA_VISIBLE_DEVICES"]="-1"    
+os.environ["CUDA_VISIBLE_DEVICES"]="-1"  
 
 from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.preprocessing import image
@@ -36,7 +36,7 @@ model.compile(optimizer = RMSprop(lr = 0.001),
               loss = 'binary_crossentropy',
               metrics = ['acc'])
 
-model._make_predict_function()
+#model._make_predict_function()
 print("Loaded model from disk")
 
 
@@ -66,7 +66,7 @@ def upload():
                                 secure_filename(f.filename))
         f.save(file_path)
         result = binary_model_predict(file_path,model)
-
+        print("Result: ".format(result))
         if(result==True):
             return "Pneumonia test result is positive"
         else:
